@@ -8,6 +8,8 @@ public class QueueCollections {
      * Üstarayüzleri: Collection, Iterable
      * Altarayüzleri: BlockingQueue
      * Kılgılayan sınıflar: AbstractQueue, ArrayBlockingQueue, ConcurrentLinkedQueue, DelayQueue, LinkedBlocking Queue, LinkedList, PriorityBlockingQueue, PriorityQueue, SynchronousQueue ‘dir
+     * Listle ana farkı list istediğin elementi verir, queue ilk son ve ya sonraki elemente odaklanır.
+     * queue.poll() yapmak ilk elementi silerken Arraylistte bu işlem için sıralama ve null check'le ilgilenmek gerekir.
      */
     public static void main(String[] args) {
         /**
@@ -56,6 +58,18 @@ public class QueueCollections {
         kuyruk.offer("Fatma");
         kuyruk.offer("Görkem");
         kuyruk.offer("Ilknur");
+        kuyruk.poll();
+        kuyruk.poll();
+        kuyruk.poll();
+        kuyruk.poll();
+        kuyruk.poll();
+        kuyruk.poll();
+        kuyruk.poll();
+        kuyruk.poll();
+        kuyruk.poll();
+        kuyruk.poll();
+        kuyruk.poll();
+        // hata vermez
         System.out.println(Collections.singletonList(kuyruk));
 
         /**

@@ -70,14 +70,14 @@ public class SetCollections {
          *Bu ornekte 3 elemani da HashSet’e ekleyecektir.
          * Bu referans degiskenleri icin equals metodu false dondugu icin bunlarin hic biri duplicate eleman durumunda degildir.
          */
-        Otobus otobus1 = new Otobus();
-        Otobus otobus2 = new Otobus();
-        Otobus otobus3 = new Otobus();
-        Set<Otobus> otobusSet = new HashSet<Otobus>();
-        otobusSet.add(otobus1);
-        otobusSet.add(otobus2);
-        otobusSet.add(otobus3);
-        System.out.println(otobusSet.size());
+        Object object1 = new Object();
+        Object object2 = new Object();
+        Object object3 = new Object();
+        Set<Object> objectSet = new HashSet<Object>();
+        objectSet.add(object1);
+        objectSet.add(object2);
+        objectSet.add(object3);
+        System.out.println(objectSet.size());
 
         /**
          * TreeSet ordered ve sorted ozellige sahiptir.
@@ -100,14 +100,14 @@ public class SetCollections {
 
         Set treeSetCar = new TreeSet();
 
-        Otobus otobus = new Otobus();
+        Object object = new Object();
 
-        treeSetCar.add(otobus);
+        treeSetCar.add(object);
         // Otobus sinifi Comparable olmadigi icin calisma zamaninda
         // java.lang.ClassCastException hatasi verecektir.
 
         //Otobus sinifimiz icin java.util.Comparable arabirimini uygulanırsa, TreeSet’e Otobus tipinde elemanlar ekleyebiliriz
-        //class Otobus implements Comparable
+        //class Object implements Comparable
 
     }
 }
