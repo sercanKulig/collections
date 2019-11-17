@@ -20,7 +20,7 @@ public class ListCollections {
          *  Yani bu sınıfa ait dizilerin boyutları azaltılabilir ya da arttırılabilir.
          *  Bir başka ifade ile bir dizinin boyutunu değiştiğinde ilk dizideki elemanlar yeni diziye kopyalanır.
          *  ArrayList arrayi kendi içerisinde yönetir.
-         *
+         *  Array belirtilen sayıda eleman tutar ve primitive sışında eleman tutamaz, Arraylistler bunu yapabilir.
          *  [0][1][2][3][4][5].......
          * */
         ArrayList<String> list = new ArrayList<>();
@@ -73,7 +73,6 @@ public class ListCollections {
          * Vector temel olarak ArrayList’e benzemektedir fakat Vector’un metotlari thread-safe yani synchronized ‘dir.
          * Vector sinifi yerine ArrayList tercih edilmektedir.
          * Thread safe yapisi gerektigi durumda java.util.Collections sinifinda yer alan metotlar yardimi ile yapilmaktadir.
-         * Ilerleyen bolumlerde inceleyecegiz.
          */
     }
 }

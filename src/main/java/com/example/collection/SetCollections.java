@@ -10,6 +10,10 @@ public class SetCollections {
 
         //todo Serializable nedir?
         /**
+         * Objeleri yazılabilir, taşınabilir, farklı platformalarda okunabilir hale getirir.
+         * Örneğin içerisinde toString methodu olan bir bean'i Serializable yapalım.
+         * objeyi bir texte yazdırıp tekrar okuyarak direk Objeye ulaşabilir, ulaştığımız objeden toStringi çağıdabiliriz.
+         *
          * Set<java.io.Serializable> hashSet = new LinkedHashSet<java.io.Serializable>();
          *         hashSet.add(10);
          *         hashSet.add(20);
